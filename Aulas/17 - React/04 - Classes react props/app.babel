@@ -1,0 +1,10 @@
+
+var container = document.getElementById('main');
+class Box extends React.Component{
+	render(){
+		return <h2>{this.props.children}{this.props.nome}</h2>		
+	}
+}
+
+//ReactDOM.render(<Box />,container);
+ReactDOM.render(<div><Box>teste</Box> <Box nome="box2" /></div>,container)

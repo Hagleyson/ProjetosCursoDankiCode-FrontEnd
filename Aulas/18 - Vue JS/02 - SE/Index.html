@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title></title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="app" v-if="visivel">
+    <h1>OK</h1>
+</div>
+<div id="app2" v-if="olhar">
+	<h1>ok2</h1>
+</div>
+<script >
+	var app = new Vue({
+	  el: '#app',
+	  data: {
+	    visivel:false
+	  }
+	})
+	var app2 = new Vue({
+		el: '#app2',
+		data:{
+			olhar:true
+		}
+	})
+</script>
+</body>
+</html>

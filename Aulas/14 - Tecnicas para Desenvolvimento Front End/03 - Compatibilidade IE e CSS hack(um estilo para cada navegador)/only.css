@@ -1,0 +1,12 @@
+/*Para  qualquer navegador*/ 
+body{
+	background: blue;
+}
+/*Essa linha serve apensas para estilizar o IE ou EDGE*/
+_:-ms-lang(x), body{background: black;}
+/*Apenas para o mozilla*/
+@-moz-document url-prefix(){
+	body{
+		background: green;
+	}
+}

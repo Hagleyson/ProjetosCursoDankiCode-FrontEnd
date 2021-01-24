@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">	
+</head>
+<body>	
+	<h1 id='teste'></h1>
+	<h2 id="texto"></h2>
+<script >
+	function teste(executarAlgo){
+		executarAlgo();
+	}
+	//()=>{} mesma coisa que function(){}
+	teste(()=>{
+	 document.getElementById("teste").innerHTML = 'Ola mundo!';	 
+	})
+
+	
+	function texto(){
+		var texto = `teste
+		teste
+		teste`
+		document.getElementById("texto").innerHTML = texto;	 
+	}
+	
+	texto();
+</script>
+
+</body>
+</html>

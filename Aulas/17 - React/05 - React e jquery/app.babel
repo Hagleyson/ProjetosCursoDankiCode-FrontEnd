@@ -1,0 +1,21 @@
+
+var container = document.getElementById('main');
+class Box extends React.Component{
+	render(){
+		return <h2>{this.props.children}{this.props.nome}</h2>		
+	}
+}
+class Fomulario extends React.Component{
+	minhaFuncao(){
+		return (<div><input type="text"/><input onClick={this.handleClick} type="submit"/></div>)
+	}
+	handleClick(){
+		$('body').css('background-color',"black")
+	}
+	render(){
+		return this.minhaFuncao();
+	}
+}
+
+//ReactDOM.render(<Box />,container);
+ReactDOM.render(<Fomulario />,container)

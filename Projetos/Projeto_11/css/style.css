@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+.clear {
+  clear: both; }
+
+html, body {
+  height: 100%; }
+  html .sidebar, body .sidebar {
+    height: 100%;
+    background-color: #2D3035;
+    width: 300px;
+    float: left; }
+    html .sidebar .topo, body .sidebar .topo {
+      background-color: #26282d;
+      text-align: center;
+      padding: 20px 10px;
+      text-transform: uppercase; }
+      html .sidebar .topo h3, body .sidebar .topo h3 {
+        color: white; }
+    html .sidebar nav.menu, body .sidebar nav.menu {
+      padding: 30px; }
+      html .sidebar nav.menu ul, body .sidebar nav.menu ul {
+        list-style-type: none; }
+        html .sidebar nav.menu ul li, body .sidebar nav.menu ul li {
+          margin-bottom: 20px;
+          font-size: 19px;
+          color: #bcc4bf; }
+          html .sidebar nav.menu ul li a, body .sidebar nav.menu ul li a {
+            color: #bcc4bf;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 19px; }
+        html .sidebar nav.menu ul li:hover i, body .sidebar nav.menu ul li:hover i {
+          color: #a377d1;
+          transition: 0.6s; }
+        html .sidebar nav.menu ul li:hover a, body .sidebar nav.menu ul li:hover a {
+          color: white;
+          transition: 0.6s; }
+  html div.main-content, body div.main-content {
+    float: left;
+    width: calc(100% - 300px);
+    height: 100%; }
+    html div.main-content header, body div.main-content header {
+      background-color: white;
+      padding: 20px 15px;
+      border-bottom: 2px solid gray;
+      height: 70px; }
+      html div.main-content header .nome-usuario, body div.main-content header .nome-usuario {
+        display: none;
+        float: left;
+        font-size: 30px;
+        color: #A7A7A7; }
+      html div.main-content header .icone-alerta, body div.main-content header .icone-alerta {
+        float: right;
+        background-color: #D6D6D6;
+        color: white;
+        padding: 5px;
+        width: 30px;
+        height: 28px;
+        text-align: center;
+        margin-right: 8px;
+        cursor: pointer;
+        vertical-align: middle;
+        position: relative; }
+        html div.main-content header .icone-alerta p, body div.main-content header .icone-alerta p {
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          display: inline-block;
+          background-color: #ED7387;
+          color: white;
+          padding: 2px;
+          font-size: 10px; }
+        html div.main-content header .icone-alerta i, body div.main-content header .icone-alerta i {
+          color: #ED7387;
+          font-size: 18px;
+          font-weight: bold; }
+      html div.main-content header .pesquisa-campo, body div.main-content header .pesquisa-campo {
+        float: right; }
+        html div.main-content header .pesquisa-campo .icone-pesquisa, body div.main-content header .pesquisa-campo .icone-pesquisa {
+          display: inline-block;
+          background-color: #D6D6D6;
+          color: white;
+          padding: 5px;
+          width: 30px;
+          height: 28px;
+          text-align: center;
+          cursor: pointer;
+          vertical-align: middle; }
+        html div.main-content header .pesquisa-campo form, body div.main-content header .pesquisa-campo form {
+          display: inline-block; }
+          html div.main-content header .pesquisa-campo form input[type=text], body div.main-content header .pesquisa-campo form input[type=text] {
+            width: 200px;
+            font-size: 16px;
+            line-height: 26px;
+            padding-left: 5px;
+            border: 1px solid #ccc;
+            vertical-align: middle; }
+          html div.main-content header .pesquisa-campo form input[type=text]:focus, body div.main-content header .pesquisa-campo form input[type=text]:focus {
+            outline: none; }
+    html div.main-content .content1, body div.main-content .content1 {
+      float: left;
+      width: 80%;
+      height: calc(100% - 70px);
+      padding: 30px;
+      overflow: auto; }
+      html div.main-content .content1 .panel, body div.main-content .content1 .panel {
+        width: 100%;
+        float: left;
+        border: 2px solid #EBEBEB;
+        background-color: white;
+        padding: 10px 2%;
+        margin-top: 10px; }
+        html div.main-content .content1 .panel h2, body div.main-content .content1 .panel h2 {
+          color: #7f7f7f;
+          font-size: 24px;
+          font-weight: normal; }
+        html div.main-content .content1 .panel p, body div.main-content .content1 .panel p {
+          font-size: 17px;
+          color: #b2b2b2;
+          margin-top: 10px;
+          text-align: justify; }
+    html div.main-content .ultimas-atividades, body div.main-content .ultimas-atividades {
+      width: 20%;
+      height: calc(100% - 70px);
+      background-color: #eaebeb;
+      padding: 20px 40px;
+      float: left;
+      overflow: auto; }
+      html div.main-content .ultimas-atividades .atividades-topo, body div.main-content .ultimas-atividades .atividades-topo {
+        margin-bottom: 15px; }
+        html div.main-content .ultimas-atividades .atividades-topo h2, body div.main-content .ultimas-atividades .atividades-topo h2 {
+          color: #7f7f7f;
+          font-size: 23px;
+          padding: 15px;
+          border-bottom: 1px solid #ccc;
+          font-weight: normal; }
+      html div.main-content .ultimas-atividades .atividades-registro, body div.main-content .ultimas-atividades .atividades-registro {
+        padding: 15px 0px 0px 25px;
+        border-left: 3px solid #ccc;
+        position: relative; }
+        html div.main-content .ultimas-atividades .atividades-registro i, body div.main-content .ultimas-atividades .atividades-registro i {
+          position: absolute;
+          top: 0;
+          left: -11px;
+          background-color: #eaebeb;
+          color: #cfccc6;
+          font-size: 20px; }
+        html div.main-content .ultimas-atividades .atividades-registro h2, body div.main-content .ultimas-atividades .atividades-registro h2 {
+          color: #BBBBBB;
+          font-size: 20px;
+          font-weight: normal; }
+        html div.main-content .ultimas-atividades .atividades-registro p, body div.main-content .ultimas-atividades .atividades-registro p {
+          color: #BBBBBB;
+          font-size: 14px;
+          font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    html .sidebar, body .sidebar {
+      display: none;
+      position: relative;
+      z-index: 9999; }
+    html div.main-content, body div.main-content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      html div.main-content header .nome-usuario, body div.main-content header .nome-usuario {
+        display: block; }
+      html div.main-content .ultimas-atividades, body div.main-content .ultimas-atividades {
+        display: none; }
+      html div.main-content .content1, body div.main-content .content1 {
+        width: 100%; }
+        html div.main-content .content1 .panel, body div.main-content .content1 .panel {
+          width: 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */

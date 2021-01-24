@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">	
+</head>
+<body>
+<div class="teste"></div>
+<p onclick="teste()">teste</p>
+<p onmouseover="teste()">teste</p>
+<p onload="teste()">teste</p>
+<h2>mais eventos</h2>
+<a href="https://www.w3schools.com/js/js_events.asp" target="_blank">Clique Aqui</a>
+<script >
+	function teste(){
+		alert('ok')
+	}
+	window.onload = function(){
+		var el = document.querySelector('.teste');
+		el.innerHTML = '<p onclick="teste()">Olá Mundo</p>';
+		
+	}
+</script>
+
+</body>
+</html>

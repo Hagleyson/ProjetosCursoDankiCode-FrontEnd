@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> </script>
+<body>
+
+<div ng-app="myApp" diretiva></div>
+
+<script>
+var app = angular.module("myApp", []);
+
+app.directive("diretiva", function() {
+  return {
+    template : "Criado por uma diretiva"
+  };
+});
+</script>
+
+</body>
+</html>

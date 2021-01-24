@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">	
+</head>
+<body>	
+<script >
+	class Pessoa{
+		constructor(nome,idade, dataNascimento,sexo){
+			this.nome = nome;
+			this.idade = idade;
+			this.dataNascimento = dataNascimento;
+			this.sexo = sexo;
+		}
+		getNome(){
+			return this.nome;
+		}
+		getIdade(){
+			return this.idade;
+		}
+		getDataNascimento(){
+			return this.dataNascimento;
+		}
+		getSexo(){
+			return this.sexo;
+		}
+	}
+	
+	var pessoa =  new Pessoa('Hagleyson','24','24 de abril 1996','Masculino');
+	console.log(pessoa.getNome());
+	console.log(pessoa.getIdade());
+	console.log(pessoa.getDataNascimento());
+	console.log(pessoa.getSexo());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.teste{
+	width: 200px;
+	height: 200px;
+	overflow-y: scroll;/*tem que ser scroll*/
+	-webkit-overflow-scrolling:touch;
+}
+.child{
+	width: 200px;
+	height: 900px;
+}

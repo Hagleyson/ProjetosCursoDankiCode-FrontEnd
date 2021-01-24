@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu app</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2><%= nome %></h2>
+	<h2><%= cargo %></h2>
+	<ul>
+		<% lista.forEach(function(user){ %>
+		<li><%= user.telefone %></li>
+		<% }) %>
+	</ul>
+</body>
+</html>

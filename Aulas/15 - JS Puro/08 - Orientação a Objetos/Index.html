@@ -1,0 +1,14 @@
+<script>
+var pessoa1 = new pessoa('Hagleyson','24','92');
+var pessoa2 = new pessoa('hagleyson2','24',function(){
+	alert('Olá')
+})
+	console.log(pessoa1.nome)
+	//pessoa2.peso();
+
+	function pessoa(nome,idade,peso){
+		this.nome = nome;
+		this.idade = idade;
+		this.peso = peso;
+	}
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Angular</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+<!--ng-controller cria um controlador-->
+<div ng-app="meuApp" ng-controller="controlador1">
+	<p>{{firstName}}</p>
+	<p>{{lastName}}</p>
+	<p>{{final}}</p>
+	<a href="diretivas.html">Diretivas</a>
+</div>
+<script>
+	/*Um módulo é criado usando a função AngularJS angular.module*/
+	var app = angular.module("meuApp",[]);
+	/*Adicione um controlador à sua aplicação e consulte o controlador com a ng-controllerdiretiva:*/
+	app.controller("controlador1", function($scope){
+		$scope.firstName = "Hagleyson";
+		$scope.lastName = "Fernandes";
+		$scope.final = "Leite" 
+	});
+</script>
+
+</script>
+</body>
+</html>

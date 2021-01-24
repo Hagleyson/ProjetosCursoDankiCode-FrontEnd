@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">	
+</head>
+<body>
+<p>Olá</p>
+<p>Olá</p>
+<script >
+	window.onload = function(){
+		//seleciona só o primeiro do dom 
+		var el = document.querySelector('p');
+		el.style.background = 'blue';
+		el.style.color = 'white'; 
+		//seleciona todos do dom 
+		var elementos = document.querySelectorAll('p');
+		for (var i = 0; i < elementos.length; i++) {
+			elementos[i].style.background = 'gold';
+		}
+	}
+</script>
+
+</body>
+</html>

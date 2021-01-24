@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu app</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<ul>
+	<% lista.forEach(function(user){ %>
+			<li><%= user.id %></li>
+			<li><%= user.nome %></li>
+			<li><%= user.Sobrenome %></li>
+			<li><%= user.Empresa %></li>				
+	<% }) %>
+	</ul>
+
+
+	<a href="cadastro">Cadastro</a>
+
+</body>
+</html>

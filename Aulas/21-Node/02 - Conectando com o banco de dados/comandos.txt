@@ -1,0 +1,9 @@
+npm init iniciar o node
+depois é so preencher os dados
+npm install xpress para instalar o modulo xpress
+npm install mysql para instalar o modulo de mysql
+npm install body-parser para instalar o modulo de body-parser
+npm install -g nodemon para instalar o nodemon(tipo um escutador );
+npm install -g ejs
+
+node apps.js onde apps.js é o nome do aplicativo

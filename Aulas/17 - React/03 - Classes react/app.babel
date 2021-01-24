@@ -1,0 +1,36 @@
+
+var container = document.getElementById('main');
+class Box extends React.Component{
+	render(){
+		return <div><h1>Texto</h1><h2>Olá da classe box!</h2></div>
+	}
+}
+class Formulario extends React.Component{
+	render(){
+		return (<form><input type="text"/><input type="submit"/></form>)
+	}
+}
+class Teste extends React.Component{
+	render() {
+		function printNome(){
+			return 'hagleyson';
+		}
+		return (printNome());
+	}
+}
+class Teste1 extends React.Component{
+	render() {
+		var x = 'Fernandes'
+		return <h1>{x}</h1>
+	}
+}
+class Teste2 extends React.Component{
+	printNome(){
+		return 'Leite'
+	}
+	render() {
+		return this.printNome();
+	}
+}
+//ReactDOM.render(<Box />,container);
+ReactDOM.render(<div class="principal"><Formulario /><Box /><Teste /><Teste1 /><Teste2 /></div> 	,container)

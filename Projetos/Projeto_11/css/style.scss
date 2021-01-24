@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+.clear{
+	clear: both;
+}
+html,body{
+	height: 100%;
+	.sidebar{
+		height: 100%;
+		background-color: #2D3035;
+		width:300px;
+		float: left;
+		.topo{
+			background-color:#26282d;
+			text-align: center;
+			padding:20px 10px;
+			text-transform: uppercase;
+			h3{
+				color: white;
+			}
+		}
+		nav.menu{
+			padding:30px;
+			ul{
+				list-style-type: none;	
+				li{
+					margin-bottom:20px;
+					font-size: 19px;
+					color: #bcc4bf;
+					a{
+						color: #bcc4bf;
+						text-decoration: none;
+						margin-left: 10px;
+						font-size: 19px;
+					}
+				}
+				li:hover{
+					i{
+						color: #a377d1;
+						transition: 0.6s;
+					}
+					a{
+						color: white;
+						transition: 0.6s;
+					}
+				}			
+			}		
+
+		}
+
+	}
+	//Fim sider bar
+
+	div.main-content{
+		float: left;
+		width: calc(100% - 300px);
+		height: 100%;
+		header{
+			background-color:white;
+			padding:20px 15px;
+			border-bottom:2px solid gray;
+			height: 70px;
+			.nome-usuario{
+				display: none;
+				float: left;
+				font-size: 30px;
+				color: #A7A7A7;
+			}
+			.icone-alerta{
+				float: right;
+				background-color:#D6D6D6;
+				color: white;
+				padding:5px;
+				width: 30px;
+				height: 28px;
+				text-align: center;
+				margin-right: 8px;
+				cursor: pointer;				
+				vertical-align: middle;
+				position: relative;
+				p{
+					position: absolute;
+					top: -5px; 
+					left:-5px;
+					display: inline-block;
+					background-color:#ED7387;
+					color: white;
+					padding: 2px;
+					font-size: 10px;
+				}
+				i{
+					color: #ED7387;
+					font-size: 18px;
+					font-weight: bold;
+				}
+			}
+			.pesquisa-campo{
+				float: right;
+				.icone-pesquisa{
+					display: inline-block;
+					background-color:#D6D6D6;
+					color: white;
+					padding:5px;
+					width: 30px;
+					height: 28px;
+					text-align: center;
+					cursor: pointer;
+					vertical-align: middle;
+				}
+				form{
+					display: inline-block;
+					input[type=text]{
+						width: 200px;
+						font-size: 16px;
+						line-height: 26px;
+						padding-left: 5px;
+						border:1px solid #ccc;
+						vertical-align: middle;
+					}
+					input[type=text]:focus{
+						outline: none;
+					}
+				}
+			}
+		}
+		.content1{
+			float: left;
+			width: 80%;
+			height: calc(100% - 70px);
+			padding:30px;
+			overflow: auto;
+			.panel{
+				width: 100%;
+				float: left;
+				border:2px solid #EBEBEB;
+				background-color: white;
+				padding:10px 2%;
+				margin-top: 10px; 
+				h2{
+					color: #7f7f7f;
+					font-size: 24px;
+					font-weight: normal;
+				}
+				p{
+					font-size: 17px;
+					color: #b2b2b2;
+					margin-top: 10px;
+					text-align: justify;
+				}
+			}
+		}
+		.ultimas-atividades{
+			width: 20%;
+			height: calc(100% - 70px);
+			background-color:#eaebeb;
+			padding: 20px 40px;
+			float: left;
+			overflow: auto;
+			.atividades-topo{
+				margin-bottom: 15px;
+				h2{
+					color: #7f7f7f;
+					font-size: 23px;
+					padding:15px;
+					border-bottom: 1px solid #ccc;
+					font-weight:normal;
+
+				}
+			}
+			.atividades-registro{
+				padding:15px 0px 0px 25px;
+				border-left:3px solid #ccc;
+				position: relative;
+				i{
+					position: absolute;
+					top: 0;
+					left: -11px;
+					background-color:#eaebeb;
+					color: #cfccc6;					
+					font-size: 20px;
+				}
+				h2{
+					color: #BBBBBB;
+					font-size: 20px;
+					font-weight: normal;
+				}
+				p{
+					color: #BBBBBB;
+					font-size: 14px;
+					font-weight: normal;
+				}
+
+			}
+		}
+
+	}
+	@media screen and (max-width: 768px){
+		.sidebar{display: none;position: relative; z-index: 9999;}
+		div.main-content{
+			width: 100%;
+			position:absolute;
+			left: 0;
+			top: 0;
+			header{
+				.nome-usuario{
+					display: block;
+				}
+			}
+			.ultimas-atividades{display: none;}
+
+			.content1{
+				width: 100%;
+				.panel{
+					width: 100% !important;
+				}
+			}
+		}
+	
+}
+	
+
+}
+

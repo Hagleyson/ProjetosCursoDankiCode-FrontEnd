@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Angular</title>
+</head>
+
+<body>
+<!-- 
+	A diretiva ng-init inicializa as variáveis ​​do aplicativo AngularJS.
+	A diretiva ng-app informa ao AngularJS que o elemento <div> é o "proprietário" de um aplicativo AngularJS .
+
+	A diretiva ng-model vincula o valor do campo de entrada ao nome da variável do aplicativo .
+
+	A diretiva ng-bind liga o conteúdo do elemento <p> ao nome da variável do aplicativo 
+-->
+<div ng-app ng-init="cor='lightblue';exemplo='exemplo'">
+	<p>Digite uma cor</p><input style="background-color:{{cor}}" ng-model="cor"><p>Cor atual: {{cor}}</p>
+
+  	<p>Name : <input type="text" ng-model="name"></p>
+  	<h1>Olá {{name}}</h1>
+  	<h2>Soma 2 + 2= {{2+2}}</h2>
+  	<p>Todas as variáveis <span ng-bind="cor + ' ' + exemplo "></span></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>

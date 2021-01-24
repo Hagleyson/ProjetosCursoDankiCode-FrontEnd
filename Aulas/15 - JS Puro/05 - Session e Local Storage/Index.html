@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">	
+</head>
+<body>
+
+<script >
+	//para usar o local storage é só mudar o nome de Section para local
+	window.onload = function(){
+		if (typeof('Storage')!== "undefined") {
+			alert('o navegador é compátivel com Storage');
+			initialize();
+		}else{
+			alert('atualize seu navegador!');
+		}
+
+		function initialize(){
+			if(sessionStorage.getItem("nome")!== null){
+				alert('Olá, '+ sessionStorage.nome+', Seja bem-vindo de volta');
+
+			}else{
+				alert('Olá! Essa é sua primeira visita no nosso site:');
+				sessionStorage.nome = "Hagleyson"
+			}
+		}
+		
+	}
+</script>
+
+</body>
+</html>

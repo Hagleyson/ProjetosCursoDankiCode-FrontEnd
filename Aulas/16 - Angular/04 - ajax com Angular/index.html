@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> </script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="meuController">
+	<div ng-bind-html="resposta"></div>
+</div>
+<script >
+	var app = angular.module('myApp', []);
+	app.controller('meuController', function($scope, $http, $sce) {
+	  $http({
+	    method : "GET",
+	      url : "ajax.html"
+	  }).then(function mySuccess(response) {
+	    $scope.resposta = $sce.trustAsHtml(response.data);
+	  }, function myError(response) {
+	    $scope.resposta = response.statusText;
+	  });
+	});
+</script>
+</body>
+</html>
